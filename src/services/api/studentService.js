@@ -67,7 +67,16 @@ export const studentService = {
     return students.filter(student => {
       const matchesClass = classYear ? student.class === classYear : true;
       const matchesSection = section ? student.section === section : true;
-      return matchesClass && matchesSection;
+return matchesClass && matchesSection;
     });
   }
 };
+
+// Export individual functions for direct import
+export const getAllStudents = () => studentService.getAll();
+export const getStudentById = (id) => studentService.getById(id);
+export const createStudent = (data) => studentService.create(data);
+export const updateStudent = (id, data) => studentService.update(id, data);
+export const deleteStudent = (id) => studentService.delete(id);
+export const searchStudents = (query) => studentService.searchStudents(query);
+export const filterStudentsByClass = (classYear, section) => studentService.filterByClass(classYear, section);

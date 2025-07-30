@@ -7,8 +7,8 @@ import Dashboard from '@/components/pages/Dashboard';
 import Students from '@/components/pages/Students';
 import Admissions from '@/components/pages/Admissions';
 import MarkAttendance from '@/components/pages/MarkAttendance';
+import Academics from '@/components/pages/Academics';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
-
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -41,34 +41,7 @@ function App() {
                 <Route path="/admissions/enquiries/:id" element={<Admissions />} />
                 <Route path="/admissions/applications/:id" element={<Admissions />} />
                 
-                <Route 
-                  path="/academics" 
-                  element={
-                    <PlaceholderPage
-                      title="Academic Management"
-                      description="Comprehensive academic management system for grades, assignments, and curriculum tracking."
-                      icon="BookOpen"
-                      gradient="from-blue-500 to-indigo-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "GraduationCap",
-                          title: "Grade Management",
-                          description: "Digital gradebook with grade calculation and reporting"
-                        },
-                        {
-                          icon: "FileText",
-                          title: "Assignment Tracking",
-                          description: "Create, assign, and track student assignments and submissions"
-                        },
-                        {
-                          icon: "BookOpen",
-                          title: "Curriculum Planning",
-                          description: "Plan and track curriculum delivery across subjects"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/academics" element={<Academics />} />
                 
 <Route 
                   path="/attendance" 

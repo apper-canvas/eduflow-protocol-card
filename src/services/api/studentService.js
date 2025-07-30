@@ -62,13 +62,20 @@ export const studentService = {
     );
   },
 
-  async filterByClass(classYear, section = '') {
+async filterByClass(classYear, section = '') {
     await delay(200);
     return students.filter(student => {
       const matchesClass = classYear ? student.class === classYear : true;
       const matchesSection = section ? student.section === section : true;
-return matchesClass && matchesSection;
-    });
+      return matchesClass && matchesSection;
+    }).map(student => ({ ...student }));
+  },
+
+  async getClassSections(classYear) {
+    await delay(100);
+    const classStudents = students.filter(s => s.class === classYear);
+    const sections = [...new Set(classStudents.map(s => s.section))];
+    return sections.sort();
   }
 };
 

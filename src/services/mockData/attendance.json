@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "date": "2024-01-15",
+    "class": "10th",
+    "section": "A",
+    "studentId": 1,
+    "status": "Present",
+    "markedAt": "2024-01-15T09:00:00Z",
+    "markedBy": "teacher1"
+  },
+  {
+    "Id": 2,
+    "date": "2024-01-15",
+    "class": "10th",
+    "section": "A",
+    "studentId": 7,
+    "status": "Present",
+    "markedAt": "2024-01-15T09:00:00Z",
+    "markedBy": "teacher1"
+  },
+  {
+    "Id": 3,
+    "date": "2024-01-15",
+    "class": "10th",
+    "section": "A",
+    "studentId": 15,
+    "status": "Absent",
+    "markedAt": "2024-01-15T09:00:00Z",
+    "markedBy": "teacher1"
+  },
+  {
+    "Id": 4,
+    "date": "2024-01-15",
+    "class": "9th",
+    "section": "A",
+    "studentId": 5,
+    "status": "Present",
+    "markedAt": "2024-01-15T09:00:00Z",
+    "markedBy": "teacher1"
+  },
+  {
+    "Id": 5,
+    "date": "2024-01-15",
+    "class": "9th",
+    "section": "A",
+    "studentId": 12,
+    "status": "Present",
+    "markedAt": "2024-01-15T09:00:00Z",
+    "markedBy": "teacher1"
+  }
+]

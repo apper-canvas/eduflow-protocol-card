@@ -6,7 +6,9 @@ import Header from '@/components/organisms/Header';
 import Dashboard from '@/components/pages/Dashboard';
 import Students from '@/components/pages/Students';
 import Admissions from '@/components/pages/Admissions';
+import MarkAttendance from '@/components/pages/MarkAttendance';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
+
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -68,33 +70,9 @@ function App() {
                   } 
                 />
                 
-                <Route 
+<Route 
                   path="/attendance" 
-                  element={
-                    <PlaceholderPage
-                      title="Attendance Management"
-                      description="Efficient attendance tracking system with real-time reporting and parent notifications."
-                      icon="Calendar"
-                      gradient="from-purple-500 to-violet-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "Clock",
-                          title: "Daily Attendance",
-                          description: "Quick and easy daily attendance marking for all classes"
-                        },
-                        {
-                          icon: "BarChart3",
-                          title: "Attendance Reports",
-                          description: "Detailed attendance reports and analytics for students and classes"
-                        },
-                        {
-                          icon: "Bell",
-                          title: "Parent Notifications",
-                          description: "Automatic notifications to parents for absences and tardiness"
-                        }
-                      ]}
-                    />
-                  } 
+                  element={<MarkAttendance />} 
                 />
                 
                 <Route 

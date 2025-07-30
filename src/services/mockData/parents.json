@@ -1,0 +1,222 @@
+[
+  {
+    "Id": 1,
+    "studentId": "1",
+    "fatherName": "Rajesh Sharma",
+    "motherName": "Sunita Sharma",
+    "primaryContact": "+91-9876543210",
+    "secondaryContact": "+91-9876543211",
+    "email": "rajesh.sharma@email.com",
+    "occupation": "Software Engineer",
+    "address": "123 Park Street, Mumbai, Maharashtra"
+  },
+  {
+    "Id": 2,
+    "studentId": "2",
+    "fatherName": "Amit Patel",
+    "motherName": "Neha Patel",
+    "primaryContact": "+91-9876543212",
+    "secondaryContact": "+91-9876543213",
+    "email": "amit.patel@email.com",
+    "occupation": "Doctor",
+    "address": "456 Green Avenue, Delhi"
+  },
+  {
+    "Id": 3,
+    "studentId": "3",
+    "fatherName": "Suresh Kumar",
+    "motherName": "Meera Kumar",
+    "primaryContact": "+91-9876543214",
+    "secondaryContact": "+91-9876543215",
+    "email": "suresh.kumar@email.com",
+    "occupation": "Business Owner",
+    "address": "789 Rose Garden, Bangalore, Karnataka"
+  },
+  {
+    "Id": 4,
+    "studentId": "4",
+    "fatherName": "Vikram Singh",
+    "motherName": "Ritu Singh",
+    "primaryContact": "+91-9876543216",
+    "secondaryContact": "+91-9876543217",
+    "email": "vikram.singh@email.com",
+    "occupation": "Teacher",
+    "address": "321 Blue Hills, Chennai, Tamil Nadu"
+  },
+  {
+    "Id": 5,
+    "studentId": "5",
+    "fatherName": "Manish Gupta",
+    "motherName": "Pooja Gupta",
+    "primaryContact": "+91-9876543218",
+    "secondaryContact": "+91-9876543219",
+    "email": "manish.gupta@email.com",
+    "occupation": "Accountant",
+    "address": "654 Golden Street, Pune, Maharashtra"
+  },
+  {
+    "Id": 6,
+    "studentId": "6",
+    "fatherName": "Krishnan Reddy",
+    "motherName": "Lakshmi Reddy",
+    "primaryContact": "+91-9876543220",
+    "secondaryContact": "+91-9876543221",
+    "email": "krishnan.reddy@email.com",
+    "occupation": "IT Manager",
+    "address": "987 Silver Lane, Hyderabad, Telangana"
+  },
+  {
+    "Id": 7,
+    "studentId": "7",
+    "fatherName": "Ashok Mehta",
+    "motherName": "Kavita Mehta",
+    "primaryContact": "+91-9876543222",
+    "secondaryContact": "+91-9876543223",
+    "email": "ashok.mehta@email.com",
+    "occupation": "Bank Manager",
+    "address": "147 Oak Valley, Kolkata, West Bengal"
+  },
+  {
+    "Id": 8,
+    "studentId": "8",
+    "fatherName": "Deepak Joshi",
+    "motherName": "Shalini Joshi",
+    "primaryContact": "+91-9876543224",
+    "secondaryContact": "+91-9876543225",
+    "email": "deepak.joshi@email.com",
+    "occupation": "Civil Engineer",
+    "address": "258 Maple Drive, Ahmedabad, Gujarat"
+  },
+  {
+    "Id": 9,
+    "studentId": "9",
+    "fatherName": "Ramesh Agarwal",
+    "motherName": "Seema Agarwal",
+    "primaryContact": "+91-9876543226",
+    "secondaryContact": "+91-9876543227",
+    "email": "ramesh.agarwal@email.com",
+    "occupation": "Businessman",
+    "address": "369 Pine Street, Jaipur, Rajasthan"
+  },
+  {
+    "Id": 10,
+    "studentId": "10",
+    "fatherName": "Anil Nair",
+    "motherName": "Priya Nair",
+    "primaryContact": "+91-9876543228",
+    "secondaryContact": "+91-9876543229",
+    "email": "anil.nair@email.com",
+    "occupation": "Marine Engineer",
+    "address": "741 Cedar Road, Kochi, Kerala"
+  },
+  {
+    "Id": 11,
+    "studentId": "11",
+    "fatherName": "Sanjeev Verma",
+    "motherName": "Rekha Verma",
+    "primaryContact": "+91-9876543230",
+    "secondaryContact": "+91-9876543231",
+    "email": "sanjeev.verma@email.com",
+    "occupation": "Government Officer",
+    "address": "852 Birch Avenue, Indore, Madhya Pradesh"
+  },
+  {
+    "Id": 12,
+    "studentId": "12",
+    "fatherName": "Kiran Shah",
+    "motherName": "Nisha Shah",
+    "primaryContact": "+91-9876543232",
+    "secondaryContact": "+91-9876543233",
+    "email": "kiran.shah@email.com",
+    "occupation": "Textile Business",
+    "address": "963 Elm Street, Surat, Gujarat"
+  },
+  {
+    "Id": 13,
+    "studentId": "13",
+    "fatherName": "Ravi Malhotra",
+    "motherName": "Shikha Malhotra",
+    "primaryContact": "+91-9876543234",
+    "secondaryContact": "+91-9876543235",
+    "email": "ravi.malhotra@email.com",
+    "occupation": "Architect",
+    "address": "174 Willow Lane, Nagpur, Maharashtra"
+  },
+  {
+    "Id": 14,
+    "studentId": "14",
+    "fatherName": "Rohit Khanna",
+    "motherName": "Anjali Khanna",
+    "primaryContact": "+91-9876543236",
+    "secondaryContact": "+91-9876543237",
+    "email": "rohit.khanna@email.com",
+    "occupation": "Lawyer",
+    "address": "285 Spruce Court, Lucknow, Uttar Pradesh"
+  },
+  {
+    "Id": 15,
+    "studentId": "15",
+    "fatherName": "Arun Chopra",
+    "motherName": "Meena Chopra",
+    "primaryContact": "+91-9876543238",
+    "secondaryContact": "+91-9876543239",
+    "email": "arun.chopra@email.com",
+    "occupation": "Pharmacist",
+    "address": "396 Poplar Street, Chandigarh"
+  },
+  {
+    "Id": 16,
+    "studentId": "16",
+    "fatherName": "Imran Ali",
+    "motherName": "Fatima Ali",
+    "primaryContact": "+91-9876543240",
+    "secondaryContact": "+91-9876543241",
+    "email": "imran.ali@email.com",
+    "occupation": "Chef",
+    "address": "507 Cypress Drive, Bhopal, Madhya Pradesh"
+  },
+  {
+    "Id": 17,
+    "studentId": "17",
+    "fatherName": "Gaurav Bansal",
+    "motherName": "Sonia Bansal",
+    "primaryContact": "+91-9876543242",
+    "secondaryContact": "+91-9876543243",
+    "email": "gaurav.bansal@email.com",
+    "occupation": "Marketing Manager",
+    "address": "618 Magnolia Road, Vadodara, Gujarat"
+  },
+  {
+    "Id": 18,
+    "studentId": "18",
+    "fatherName": "Rahul Kapoor",
+    "motherName": "Divya Kapoor",
+    "primaryContact": "+91-9876543244",
+    "secondaryContact": "+91-9876543245",
+    "email": "rahul.kapoor@email.com",
+    "occupation": "Hotel Manager",
+    "address": "729 Jasmine Lane, Goa"
+  },
+  {
+    "Id": 19,
+    "studentId": "19",
+    "fatherName": "Dinesh Thakur",
+    "motherName": "Sunita Thakur",
+    "primaryContact": "+91-9876543246",
+    "secondaryContact": "+91-9876543247",
+    "email": "dinesh.thakur@email.com",
+    "occupation": "Tour Guide",
+    "address": "840 Rose Hill, Shimla, Himachal Pradesh"
+  },
+  {
+    "Id": 20,
+    "studentId": "20",
+    "fatherName": "Vikas Saxena",
+    "motherName": "Geeta Saxena",
+    "primaryContact": "+91-9876543248",
+    "secondaryContact": "+91-9876543249",
+    "email": "vikas.saxena@email.com",
+    "occupation": "Forest Officer",
+    "address": "951 Violet Street, Dehradun, Uttarakhand"
+  }
+]

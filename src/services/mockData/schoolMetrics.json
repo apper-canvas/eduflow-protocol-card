@@ -1,0 +1,10 @@
+{
+  "totalStudents": 1245,
+  "totalTeachers": 78,
+  "attendanceRate": 94.5,
+  "feeCollectionRate": 89.2,
+  "activeClasses": 36,
+  "totalSubjects": 42,
+  "pendingAdmissions": 23,
+  "upcomingExams": 8
+}

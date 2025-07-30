@@ -10,6 +10,7 @@ import MarkAttendance from '@/components/pages/MarkAttendance';
 import Academics from '@/components/pages/Academics';
 import Communications from '@/components/pages/Communications';
 import Timetable from '@/components/pages/Timetable';
+import Finance from '@/components/pages/Finance';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
 
 function App() {
@@ -84,34 +85,7 @@ function App() {
                   } 
                 />
                 
-                <Route 
-                  path="/finance" 
-                  element={
-                    <PlaceholderPage
-                      title="Finance Management"
-                      description="Comprehensive financial management system for fee collection, payments, and financial reporting."
-                      icon="CreditCard"
-                      gradient="from-green-500 to-teal-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "DollarSign",
-                          title: "Fee Management",
-                          description: "Automated fee calculation and collection tracking"
-                        },
-                        {
-                          icon: "Receipt",
-                          title: "Payment Processing",
-                          description: "Multiple payment methods with receipt generation"
-                        },
-                        {
-                          icon: "TrendingUp",
-                          title: "Financial Reports",
-                          description: "Detailed financial reports and analytics"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/finance" element={<Finance />} />
                 
                 <Route 
                   path="/transport" 

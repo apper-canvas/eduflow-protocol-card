@@ -1,0 +1,218 @@
+[
+  {
+    "Id": 1,
+    "categoryName": "Tuition Fee",
+    "categoryType": "Academic",
+    "description": "Core academic instruction fees",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"],
+    "termType": "Monthly",
+    "baseAmount": 5000,
+    "discountRules": [
+      {
+        "id": 1,
+        "type": "Sibling Discount",
+        "percentage": 10,
+        "conditions": "Second child onwards"
+      },
+      {
+        "id": 2,
+        "type": "Early Payment",
+        "percentage": 5,
+        "conditions": "Payment before 5th of month"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 10,
+      "feeType": "Fixed",
+      "amount": 200,
+      "percentage": null,
+      "maxAmount": 1000
+    },
+    "createdAt": "2024-01-15T10:00:00Z",
+    "updatedAt": "2024-03-10T14:30:00Z"
+  },
+  {
+    "Id": 2,
+    "categoryName": "Transport Fee",
+    "categoryType": "Service",
+    "description": "School bus transportation services",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"],
+    "termType": "Quarterly",
+    "baseAmount": 3000,
+    "discountRules": [
+      {
+        "id": 3,
+        "type": "Zone Discount",
+        "percentage": 15,
+        "conditions": "Within 2km radius"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 15,
+      "feeType": "Percentage",
+      "amount": null,
+      "percentage": 2,
+      "maxAmount": 500
+    },
+    "createdAt": "2024-01-20T09:15:00Z",
+    "updatedAt": "2024-02-28T11:45:00Z"
+  },
+  {
+    "Id": 3,
+    "categoryName": "Library Fee",
+    "categoryType": "Facility",
+    "description": "Library access and book maintenance",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"],
+    "termType": "Annual",
+    "baseAmount": 1200,
+    "discountRules": [],
+    "lateFeePolicy": {
+      "enabled": false,
+      "gracePeriod": 0,
+      "feeType": "Fixed",
+      "amount": 0,
+      "percentage": null,
+      "maxAmount": 0
+    },
+    "createdAt": "2024-01-18T16:20:00Z",
+    "updatedAt": "1/18/2024 4:20:00 PMZ"
+  },
+  {
+    "Id": 4,
+    "categoryName": "Laboratory Fee",
+    "categoryType": "Academic",
+    "description": "Science and computer lab usage fees",
+    "isActive": true,
+    "classes": ["9th", "10th", "11th", "12th"],
+    "termType": "Monthly",
+    "baseAmount": 800,
+    "discountRules": [
+      {
+        "id": 4,
+        "type": "Merit Scholarship",
+        "percentage": 25,
+        "conditions": "Above 90% academic score"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 7,
+      "feeType": "Fixed",
+      "amount": 100,
+      "percentage": null,
+      "maxAmount": 300
+    },
+    "createdAt": "2024-02-01T12:00:00Z",
+    "updatedAt": "2024-03-05T10:15:00Z"
+  },
+  {
+    "Id": 5,
+    "categoryName": "Sports Fee",
+    "categoryType": "Activity",
+    "description": "Sports equipment and ground maintenance",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th"],
+    "termType": "Annual",
+    "baseAmount": 2000,
+    "discountRules": [
+      {
+        "id": 5,
+        "type": "Sports Quota",
+        "percentage": 50,
+        "conditions": "District level sports achiever"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 30,
+      "feeType": "Percentage",
+      "amount": null,
+      "percentage": 1.5,
+      "maxAmount": 400
+    },
+    "createdAt": "2024-02-10T14:30:00Z",
+    "updatedAt": "2024-02-15T09:45:00Z"
+  },
+  {
+    "Id": 6,
+    "categoryName": "Uniform Fee",
+    "categoryType": "Special",
+    "description": "School uniform and accessories",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"],
+    "termType": "Annual",
+    "baseAmount": 4500,
+    "discountRules": [
+      {
+        "id": 6,
+        "type": "Bulk Purchase",
+        "percentage": 8,
+        "conditions": "Purchase of complete set"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": false,
+      "gracePeriod": 0,
+      "feeType": "Fixed",
+      "amount": 0,
+      "percentage": null,
+      "maxAmount": 0
+    },
+    "createdAt": "2024-02-20T11:00:00Z",
+    "updatedAt": "2024-02-20T11:00:00Z"
+  },
+  {
+    "Id": 7,
+    "categoryName": "Event Fee",
+    "categoryType": "Special",
+    "description": "Annual functions and special events",
+    "isActive": true,
+    "classes": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"],
+    "termType": "Annual",
+    "baseAmount": 1500,
+    "discountRules": [],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 20,
+      "feeType": "Fixed",
+      "amount": 150,
+      "percentage": null,
+      "maxAmount": 300
+    },
+    "createdAt": "2024-03-01T13:15:00Z",
+    "updatedAt": "2024-03-01T13:15:00Z"
+  },
+  {
+    "Id": 8,
+    "categoryName": "Examination Fee",
+    "categoryType": "Academic",
+    "description": "Internal and board examination fees",
+    "isActive": true,
+    "classes": ["10th", "12th"],
+    "termType": "Annual",
+    "baseAmount": 2500,
+    "discountRules": [
+      {
+        "id": 7,
+        "type": "Economic Weaker Section",
+        "percentage": 100,
+        "conditions": "EWS category with valid certificate"
+      }
+    ],
+    "lateFeePolicy": {
+      "enabled": true,
+      "gracePeriod": 5,
+      "feeType": "Percentage",
+      "amount": null,
+      "percentage": 3,
+      "maxAmount": 750
+    },
+    "createdAt": "2024-03-05T15:45:00Z",
+    "updatedAt": "2024-03-12T08:20:00Z"
+  }
+]

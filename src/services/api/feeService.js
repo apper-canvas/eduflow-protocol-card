@@ -236,24 +236,19 @@ getByCategoryType: (categoryType) => {
     }
   },
 
-  getPaymentTrends: () => {
-    try {
-      return {
-        methods: [
-          { name: 'Online Payment', percentage: 65, trend: '+5%' },
-          { name: 'Cash', percentage: 25, trend: '-3%' },
-          { name: 'Cheque', percentage: 8, trend: '-1%' },
-          { name: 'Bank Transfer', percentage: 2, trend: '+1%' }
-        ],
-        monthly: [
-          { month: 'Jan', online: 60, cash: 30, cheque: 8, transfer: 2 },
-          { month: 'Feb', online: 62, cash: 28, cheque: 8, transfer: 2 },
-          { month: 'Mar', online: 65, cash: 25, cheque: 8, transfer: 2 }
-        ]
-      };
-} catch (error) {
-      console.error('Error fetching payment trends:', error);
-      return null;
-    }
+getPaymentTrends: () => {
+    return {
+      methods: [
+        { name: 'Online Payment', percentage: 65, trend: '+5%' },
+        { name: 'Cash', percentage: 25, trend: '-3%' },
+        { name: 'Cheque', percentage: 8, trend: '-1%' },
+        { name: 'Bank Transfer', percentage: 2, trend: '+1%' }
+      ],
+      monthly: [
+        { month: 'Jan', online: 60, cash: 30, cheque: 8, transfer: 2 },
+        { month: 'Feb', online: 62, cash: 28, cheque: 8, transfer: 2 },
+        { month: 'Mar', online: 65, cash: 25, cheque: 8, transfer: 2 }
+      ]
+    };
   }
 };

@@ -11,6 +11,7 @@ import Academics from '@/components/pages/Academics';
 import Communications from '@/components/pages/Communications';
 import Timetable from '@/components/pages/Timetable';
 import Finance from '@/components/pages/Finance';
+import Examinations from '@/components/pages/Examinations';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
 
 function App() {
@@ -56,37 +57,9 @@ function App() {
                 
 <Route path="/timetable" element={<Timetable />} />
                 
-                <Route 
-                  path="/examinations" 
-                  element={
-                    <PlaceholderPage
-                      title="Examination Management"
-                      description="Complete examination management system from scheduling to result processing and report generation."
-                      icon="FileText"
-                      gradient="from-red-500 to-pink-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "Calendar",
-                          title: "Exam Scheduling",
-                          description: "Create and manage exam schedules with automatic notifications"
-                        },
-                        {
-                          icon: "ClipboardList",
-                          title: "Result Processing",
-                          description: "Efficient result entry and grade calculation system"
-                        },
-                        {
-                          icon: "FileBarChart",
-                          title: "Report Cards",
-                          description: "Automated report card generation and distribution"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+                <Route path="/examinations" element={<Examinations />} />
                 
 <Route path="/finance" element={<Finance />} />
-                
                 <Route 
                   path="/transport" 
                   element={

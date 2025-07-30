@@ -1,0 +1,41 @@
+[
+  {
+    "Id": 1,
+    "name": "Mid-Term Examination",
+    "type": "Mid-term",
+    "startDate": "2024-03-15",
+    "endDate": "2024-03-25",
+    "description": "Mid-term examination for all classes",
+    "classes": [1, 2, 3, 4, 5, 6, 7],
+    "status": "Scheduled",
+    "createdAt": "2024-02-01T10:00:00Z",
+    "publishedToStudents": true,
+    "publishedToParents": true
+  },
+  {
+    "Id": 2,
+    "name": "Unit Test 1",
+    "type": "Unit Test",
+    "startDate": "2024-02-10",
+    "endDate": "2024-02-15",
+    "description": "First unit test for February",
+    "classes": [1, 2, 3],
+    "status": "Completed",
+    "createdAt": "2024-01-15T09:00:00Z",
+    "publishedToStudents": true,
+    "publishedToParents": true
+  },
+  {
+    "Id": 3,
+    "name": "Final Examination",
+    "type": "Final",
+    "startDate": "2024-05-01",
+    "endDate": "2024-05-15",
+    "description": "Annual final examination",
+    "classes": [1, 2, 3, 4, 5, 6, 7],
+    "status": "Draft",
+    "createdAt": "2024-02-20T11:00:00Z",
+    "publishedToStudents": false,
+    "publishedToParents": false
+  }
+]

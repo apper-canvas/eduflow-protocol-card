@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "examId": 1,
+    "classId": 1,
+    "subjectId": 1,
+    "date": "2024-03-15",
+    "startTime": "09:00",
+    "endTime": "11:00",
+    "duration": 120,
+    "roomId": 101,
+    "maxMarks": 100,
+    "instructions": "Bring your own stationery",
+    "supervisorId": 1
+  },
+  {
+    "Id": 2,
+    "examId": 1,
+    "classId": 1,
+    "subjectId": 2,
+    "date": "2024-03-16",
+    "startTime": "09:00",
+    "endTime": "11:30",
+    "duration": 150,
+    "roomId": 101,
+    "maxMarks": 100,
+    "instructions": "Calculator allowed",
+    "supervisorId": 2
+  },
+  {
+    "Id": 3,
+    "examId": 1,
+    "classId": 2,
+    "subjectId": 1,
+    "date": "2024-03-15",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "duration": 120,
+    "roomId": 102,
+    "maxMarks": 100,
+    "instructions": "Bring your own stationery",
+    "supervisorId": 3
+  },
+  {
+    "Id": 4,
+    "examId": 1,
+    "classId": 3,
+    "subjectId": 3,
+    "date": "2024-03-17",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "duration": 120,
+    "roomId": 201,
+    "maxMarks": 100,
+    "instructions": "Lab practical exam",
+    "supervisorId": 4
+  },
+  {
+    "Id": 5,
+    "examId": 2,
+    "classId": 1,
+    "subjectId": 1,
+    "date": "2024-02-10",
+    "startTime": "09:00",
+    "endTime": "10:30",
+    "duration": 90,
+    "roomId": 101,
+    "maxMarks": 50,
+    "instructions": "Unit test - chapters 1-3",
+    "supervisorId": 1
+  }
+]

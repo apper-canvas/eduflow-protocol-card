@@ -1,53 +1,85 @@
-import React, { useState, useEffect } from 'react';
-import { toast } from 'react-toastify';
-import Card from '@/components/atoms/Card';
-import Button from '@/components/atoms/Button';
-import Select from '@/components/atoms/Select';
-import Input from '@/components/atoms/Input';
-import ApperIcon from '@/components/ApperIcon';
-import Loading from '@/components/ui/Loading';
-import Error from '@/components/ui/Error';
-import Empty from '@/components/ui/Empty';
-import { getAllStudents } from '@/services/api/studentService';
-import { getAttendanceByClassAndDate, saveClassAttendance } from '@/services/api/attendanceService';
+import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import { getAttendanceByClassAndDate, saveClassAttendance } from "@/services/api/attendanceService";
+import { getAllStudents } from "@/services/api/studentService";
+import ApperIcon from "@/components/ApperIcon";
+import Loading from "@/components/ui/Loading";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Students from "@/components/pages/Students";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
+import Select from "@/components/atoms/Select";
+import Card from "@/components/atoms/Card";
 
-const MarkAttendance = () => {
+function MarkAttendance() {
   const [students, setStudents] = useState([]);
   const [filteredStudents, setFilteredStudents] = useState([]);
-  const [attendance, setAttendance] = useState({});
   const [selectedClass, setSelectedClass] = useState('');
   const [selectedSection, setSelectedSection] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [attendance, setAttendance] = useState({});
+const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
+  const [error, setError] = useState(null);
 
-  // Get unique classes and sections from students
+  // Get unique classes from students data
   const getClassOptions = () => {
-    const classes = [...new Set(students.map(student => student.class))].sort();
-    return classes.map(cls => ({ value: cls, label: cls }));
+    if (!students || !Array.isArray(students) || students.length === 0) {
+      return [];
+    }
+    try {
+      const classes = [...new Set(students.map(student => student?.class).filter(Boolean))].sort();
+      return classes.map(className => ({
+        value: className,
+        label: className
+      }));
+    } catch (err) {
+      console.error('Error getting class options:', err);
+      return [];
+    }
   };
 
+  // Get unique sections for the selected class
   const getSectionOptions = () => {
-    if (!selectedClass) return [];
-    const sections = [...new Set(
-      students
-        .filter(student => student.class === selectedClass)
-        .map(student => student.section)
-    )].sort();
-    return sections.map(section => ({ value: section, label: section }));
-  };
+    if (!students || !Array.isArray(students) || !selectedClass) {
+      return [];
+    }
+    try {
+      const sections = [...new Set(
+        students
+          .filter(student => student?.class === selectedClass)
+          .map(student => student?.section)
+          .filter(Boolean)
+      )].sort();
+      return sections.map(section => ({
+        value: section,
+        label: section
+      }));
+    } catch (err) {
+      console.error('Error getting section options:', err);
+      return [];
+    }
+};
 
-  // Load students data
   useEffect(() => {
     const loadStudents = async () => {
       try {
         setIsLoading(true);
         setError(null);
-        const studentsData = getAllStudents();
-        setStudents(studentsData);
+        const studentsData = await getAllStudents();
+        
+        // Ensure we always have an array
+        if (Array.isArray(studentsData)) {
+          setStudents(studentsData);
+        } else {
+          console.warn('Students data is not an array:', studentsData);
+          setStudents([]);
+        }
       } catch (err) {
+        console.error('Failed to load students:', err);
         setError('Failed to load students data');
+        setStudents([]); // Ensure students is always an array
         toast.error('Failed to load students data');
       } finally {
         setIsLoading(false);
@@ -58,30 +90,41 @@ const MarkAttendance = () => {
   }, []);
 
   // Filter students and load attendance when class, section, or date changes
-  useEffect(() => {
-    if (selectedClass && selectedSection) {
-      const filtered = students.filter(
-        student => student.class === selectedClass && student.section === selectedSection
-      );
-      setFilteredStudents(filtered);
-
-      // Load existing attendance for the selected date and class
+useEffect(() => {
+    if (selectedClass && selectedSection && Array.isArray(students)) {
       try {
+        const filtered = students.filter(
+          student => student?.class === selectedClass && student?.section === selectedSection
+        );
+        setFilteredStudents(filtered || []);
+
+        // Load existing attendance for the selected date and class
         const existingAttendance = getAttendanceByClassAndDate(selectedDate, selectedClass, selectedSection);
         const attendanceMap = {};
         
         // Initialize all students as not marked
-        filtered.forEach(student => {
-          attendanceMap[student.Id] = 'Present'; // Default to Present
-        });
+        if (Array.isArray(filtered)) {
+          filtered.forEach(student => {
+            if (student?.Id) {
+              attendanceMap[student.Id] = 'Present'; // Default to Present
+            }
+          });
+        }
         
         // Update with existing attendance data
-        existingAttendance.forEach(record => {
-          attendanceMap[record.studentId] = record.status;
-        });
+        if (Array.isArray(existingAttendance)) {
+          existingAttendance.forEach(record => {
+            if (record?.studentId && record?.status) {
+              attendanceMap[record.studentId] = record.status;
+            }
+          });
+        }
         
         setAttendance(attendanceMap);
       } catch (err) {
+        console.error('Error filtering students or loading attendance:', err);
+        setFilteredStudents([]);
+        setAttendance({});
         toast.error('Failed to load existing attendance');
       }
     } else {
@@ -125,23 +168,23 @@ const MarkAttendance = () => {
       return;
     }
 
-    if (filteredStudents.length === 0) {
-      toast.error('No students found for selected class and section');
+if (filteredStudents.length === 0) {
+      toast.error('No students to mark attendance for');
       return;
     }
 
     try {
       setIsSaving(true);
-      
-      const attendanceList = Object.entries(attendance).map(([studentId, status]) => ({
-        studentId: parseInt(studentId, 10),
-        status
+      const attendanceList = filteredStudents.map(student => ({
+        studentId: student.Id,
+        status: attendance[student.Id] || 'Present'
       }));
 
       await saveClassAttendance(selectedDate, selectedClass, selectedSection, attendanceList);
       
       toast.success(`Attendance saved successfully for ${selectedClass}-${selectedSection} on ${selectedDate}`);
     } catch (err) {
+      console.error('Failed to save attendance:', err);
       toast.error('Failed to save attendance');
     } finally {
       setIsSaving(false);
@@ -150,19 +193,16 @@ const MarkAttendance = () => {
 
   // Get attendance summary
   const getAttendanceSummary = () => {
-    const total = filteredStudents.length;
-    const present = Object.values(attendance).filter(status => status === 'Present').length;
-    const absent = total - present;
-    return { total, present, absent };
+    const total = Array.isArray(filteredStudents) ? filteredStudents.length : 0;
+    const presentCount = Object.values(attendance || {}).filter(status => status === 'Present').length;
+    const absent = total - presentCount;
+    
+    return { total, present: presentCount, absent };
   };
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
-  if (error) {
-    return <Error message={error} />;
-  }
+if (isLoading) return <Loading />;
+  if (error) return <Error message={error} />;
+  if (!Array.isArray(students) || students.length === 0) return <Empty message="No students found" />;
 
   const summary = getAttendanceSummary();
 

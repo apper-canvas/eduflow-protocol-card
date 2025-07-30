@@ -13,6 +13,7 @@ import Timetable from '@/components/pages/Timetable';
 import Finance from '@/components/pages/Finance';
 import Examinations from '@/components/pages/Examinations';
 import Transport from '@/components/pages/Transport';
+import Reports from '@/components/pages/Reports';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
 
 function App() {
@@ -66,34 +67,7 @@ path="/transport"
                 element={<Transport />} 
               />
                 
-                <Route 
-                  path="/reports" 
-                  element={
-                    <PlaceholderPage
-                      title="Reports & Analytics"
-                      description="Comprehensive reporting and analytics dashboard with customizable reports and data insights."
-                      icon="BarChart3"
-                      gradient="from-indigo-500 to-purple-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "PieChart",
-                          title: "Custom Reports",
-                          description: "Create custom reports with flexible filtering and grouping"
-                        },
-                        {
-                          icon: "TrendingUp",
-                          title: "Analytics Dashboard",
-                          description: "Interactive charts and graphs for data visualization"
-                        },
-                        {
-                          icon: "Download",
-                          title: "Export Options",
-                          description: "Export reports in multiple formats (PDF, Excel, CSV)"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/reports" element={<Reports />} />
               </Routes>
             </div>
           </main>

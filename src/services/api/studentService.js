@@ -84,6 +84,66 @@ export const getAllStudents = () => studentService.getAll();
 export const getStudentById = (id) => studentService.getById(id);
 export const createStudent = (data) => studentService.create(data);
 export const updateStudent = (id, data) => studentService.update(id, data);
+export const updateStudent = (id, data) => studentService.update(id, data);
 export const deleteStudent = (id) => studentService.delete(id);
 export const searchStudents = (query) => studentService.searchStudents(query);
 export const filterStudentsByClass = (classYear, section) => studentService.filterByClass(classYear, section);
+
+// Analytics Methods
+export const getPerformanceData = async (filters = {}) => {
+  await delay(200);
+  const allStudents = await studentService.getAll();
+  
+  // Simulated performance data
+  const performanceData = allStudents.map(student => ({
+    studentId: student.Id,
+    studentName: `${student.firstName} ${student.lastName}`,
+    class: student.class,
+    section: student.section,
+    averageGrade: Math.random() * 40 + 60, // 60-100 range
+    attendanceRate: Math.random() * 20 + 80, // 80-100 range
+    trend: Math.random() > 0.5 ? 'improving' : 'declining'
+  }));
+
+  return filters.class ? 
+    performanceData.filter(p => p.class === filters.class) : 
+    performanceData;
+};
+
+export const getEnrollmentTrends = async () => {
+  await delay(150);
+  
+  return {
+    monthly: [
+      { month: 'Jan', enrolled: 1180, target: 1200 },
+      { month: 'Feb', enrolled: 1195, target: 1200 },
+      { month: 'Mar', enrolled: 1210, target: 1200 },
+      { month: 'Apr', enrolled: 1245, target: 1250 },
+      { month: 'May', enrolled: 1248, target: 1250 },
+      { month: 'Jun', enrolled: 1245, target: 1250 }
+    ],
+    byClass: [
+      { class: '6th', current: 180, capacity: 200, waitlist: 15 },
+      { class: '7th', current: 175, capacity: 200, waitlist: 8 },
+      { class: '8th', current: 190, capacity: 200, waitlist: 12 },
+      { class: '9th', current: 195, capacity: 200, waitlist: 25 },
+      { class: '10th', current: 185, capacity: 200, waitlist: 18 },
+      { class: '11th', current: 160, capacity: 180, waitlist: 10 },
+      { class: '12th', current: 160, capacity: 180, waitlist: 5 }
+    ]
+  };
+};
+
+export const getAttendanceCorrelation = async () => {
+  await delay(200);
+  const students = await studentService.getAll();
+  
+  return students.map(student => ({
+    studentId: student.Id,
+    studentName: `${student.firstName} ${student.lastName}`,
+    class: student.class,
+    attendanceRate: Math.random() * 30 + 70, // 70-100%
+    academicScore: Math.random() * 40 + 60, // 60-100%
+    correlation: Math.random() * 0.4 + 0.6 // 0.6-1.0 correlation
+  }));
+};

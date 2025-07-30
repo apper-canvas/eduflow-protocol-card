@@ -1,4 +1,6 @@
-import feeStructuresData from '@/services/mockData/feeStructures.json';
+import feeStructuresData from "@/services/mockData/feeStructures.json";
+import React from "react";
+import Error from "@/components/ui/Error";
 
 // Local storage key
 const STORAGE_KEY = 'eduflow_fee_structures';
@@ -177,9 +179,82 @@ export const feeService = {
       return data.filter(structure => 
         structure.categoryType === categoryType && structure.isActive
       ).map(item => ({ ...item }));
+).map(item => ({ ...item }));
     } catch (error) {
       console.error('Error fetching fee structures by category type:', error);
       return [];
+    }
+
+  // Financial Analytics Methods
+  getRevenueAnalysis: (startDate, endDate) => {
+    try {
+      const data = getData();
+      const totalRevenue = data.reduce((sum, fee) => sum + fee.baseAmount * 50, 0); // Assuming 50 students average
+      
+      return {
+        totalRevenue,
+        monthlyBreakdown: [
+          { month: 'Jan', amount: totalRevenue * 0.15 },
+          { month: 'Feb', amount: totalRevenue * 0.18 },
+          { month: 'Mar', amount: totalRevenue * 0.16 },
+          { month: 'Apr', amount: totalRevenue * 0.20 },
+          { month: 'May', amount: totalRevenue * 0.17 },
+          { month: 'Jun', amount: totalRevenue * 0.14 }
+        ],
+        categoryBreakdown: data.map(fee => ({
+          category: fee.categoryName,
+          amount: fee.baseAmount * 50,
+          percentage: ((fee.baseAmount * 50) / totalRevenue * 100).toFixed(1)
+        }))
+      };
+    } catch (error) {
+      console.error('Error calculating revenue analysis:', error);
+      return null;
+    }
+  },
+
+  getCollectionStats: (period = 'current_month') => {
+    try {
+      const data = getData();
+      const totalExpected = data.reduce((sum, fee) => sum + fee.baseAmount * 50, 0);
+      const totalCollected = totalExpected * 0.892; // 89.2% collection rate
+      
+      return {
+        expected: totalExpected,
+        collected: totalCollected,
+        outstanding: totalExpected - totalCollected,
+        rate: 89.2,
+        categoryWise: data.map(fee => ({
+          category: fee.categoryName,
+          expected: fee.baseAmount * 50,
+          collected: fee.baseAmount * 50 * 0.892,
+          rate: 89.2
+        }))
+      };
+    } catch (error) {
+      console.error('Error calculating collection stats:', error);
+      return null;
+    }
+  },
+
+  getPaymentTrends: () => {
+    try {
+      return {
+        methods: [
+          { name: 'Online Payment', percentage: 65, trend: '+5%' },
+          { name: 'Cash', percentage: 25, trend: '-3%' },
+          { name: 'Cheque', percentage: 8, trend: '-1%' },
+          { name: 'Bank Transfer', percentage: 2, trend: '+1%' }
+        ],
+        monthly: [
+          { month: 'Jan', online: 60, cash: 30, cheque: 8, transfer: 2 },
+          { month: 'Feb', online: 62, cash: 28, cheque: 8, transfer: 2 },
+          { month: 'Mar', online: 65, cash: 25, cheque: 8, transfer: 2 }
+        ]
+      };
+    } catch (error) {
+      console.error('Error fetching payment trends:', error);
+return null;
     }
   }
 };

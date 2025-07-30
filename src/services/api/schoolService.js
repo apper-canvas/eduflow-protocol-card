@@ -1,5 +1,5 @@
-import schoolMetricsData from '@/services/mockData/schoolMetrics.json';
-import { studentService } from './studentService';
+import schoolMetricsData from "@/services/mockData/schoolMetrics.json";
+import { studentService } from "@/services/api/studentService";
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -42,7 +42,7 @@ export const schoolService = {
           time: "1 day ago"
         }
       ],
-      recentStudents: recentStudents.slice(0, 5),
+recentStudents: recentStudents.slice(0, 5),
       quickStats: {
         todayAttendance: 92.3,
         pendingFees: 15,
@@ -50,5 +50,37 @@ export const schoolService = {
         newEnquiries: 7
       }
     };
+  },
+
+  async getReportsData() {
+    await delay(300);
+    const metrics = await this.getMetrics();
+    const students = await studentService.getAll();
+    
+    return {
+      overview: {
+        totalStudents: metrics.totalStudents,
+        totalTeachers: metrics.totalTeachers,
+        attendanceRate: metrics.attendanceRate,
+        feeCollectionRate: metrics.feeCollectionRate
+      },
+      trends: {
+        enrollmentGrowth: 8.5,
+        academicImprovement: 12.3,
+        collectionEfficiency: 94.2,
+        teacherSatisfaction: 87.6
+      },
+      alerts: [
+        {
+          type: 'warning',
+          message: 'Fee collection rate below target in 3 classes',
+          priority: 'high'
+        },
+        {
+          type: 'info',
+          message: 'New admission applications increased by 15%',
+          priority: 'medium'
+        }
+      ]
+    };
   }
-};

@@ -5,8 +5,8 @@ import Sidebar from '@/components/organisms/Sidebar';
 import Header from '@/components/organisms/Header';
 import Dashboard from '@/components/pages/Dashboard';
 import Students from '@/components/pages/Students';
+import Admissions from '@/components/pages/Admissions';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
-
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -35,49 +35,9 @@ function App() {
                 <Route path="/students/:id/edit" element={<Students />} />
                 <Route path="/students/new" element={<Students />} />
                 
-                <Route 
-                  path="/admissions" 
-                  element={
-                    <PlaceholderPage
-                      title="Admissions Management"
-                      description="Streamline your admission process from enquiry to enrollment with our comprehensive admission management system."
-                      icon="UserPlus"
-                      gradient="from-green-500 to-emerald-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "FileText",
-                          title: "Application Forms",
-                          description: "Digital application forms with automatic validation and document upload"
-                        },
-                        {
-                          icon: "Users",
-                          title: "Enquiry Management",
-                          description: "Track and manage prospective student enquiries and follow-ups"
-                        },
-                        {
-                          icon: "Calendar",
-                          title: "Interview Scheduling",
-                          description: "Automated interview scheduling with calendar integration"
-                        },
-                        {
-                          icon: "CheckCircle",
-                          title: "Admission Workflow",
-                          description: "Customizable admission workflow with approval stages"
-                        },
-                        {
-                          icon: "Mail",
-                          title: "Communication Hub",
-                          description: "Automated emails and SMS for admission updates"
-                        },
-                        {
-                          icon: "BarChart",
-                          title: "Admission Analytics",
-                          description: "Detailed reports on admission trends and conversion rates"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/admissions" element={<Admissions />} />
+                <Route path="/admissions/enquiries/:id" element={<Admissions />} />
+                <Route path="/admissions/applications/:id" element={<Admissions />} />
                 
                 <Route 
                   path="/academics" 

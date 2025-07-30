@@ -12,6 +12,7 @@ import Communications from '@/components/pages/Communications';
 import Timetable from '@/components/pages/Timetable';
 import Finance from '@/components/pages/Finance';
 import Examinations from '@/components/pages/Examinations';
+import Transport from '@/components/pages/Transport';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
 
 function App() {
@@ -61,33 +62,9 @@ function App() {
                 
 <Route path="/finance" element={<Finance />} />
                 <Route 
-                  path="/transport" 
-                  element={
-                    <PlaceholderPage
-                      title="Transport Management"
-                      description="Complete transport management system with route planning, vehicle tracking, and safety monitoring."
-                      icon="Bus"
-                      gradient="from-yellow-500 to-orange-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "MapPin",
-                          title: "Route Management",
-                          description: "Optimize bus routes and manage pickup/drop points"
-                        },
-                        {
-                          icon: "Navigation",
-                          title: "Vehicle Tracking",
-                          description: "Real-time GPS tracking of school vehicles"
-                        },
-                        {
-                          icon: "Shield",
-                          title: "Safety Monitoring",
-                          description: "Student safety alerts and emergency notifications"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+path="/transport" 
+                element={<Transport />} 
+              />
                 
                 <Route 
                   path="/reports" 

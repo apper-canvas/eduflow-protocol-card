@@ -1,0 +1,61 @@
+[
+  {
+    "Id": 1,
+    "reportType": "Daily Transport Summary",
+    "date": "2024-01-22",
+    "totalRoutes": 3,
+    "activeRoutes": 3,
+    "totalVehicles": 4,
+    "activeVehicles": 3,
+    "totalStudents": 115,
+    "studentsTransported": 115,
+    "attendanceRate": "100%",
+    "onTimePerformance": "95%",
+    "fuelConsumption": "145.6 L",
+    "totalDistance": "856.2 km",
+    "incidents": 0,
+    "delays": 2,
+    "maintenanceAlerts": 1,
+    "createdAt": "2024-01-22"
+  },
+  {
+    "Id": 2,
+    "reportType": "Weekly Performance",
+    "weekOf": "2024-01-15",
+    "totalTrips": 84,
+    "completedTrips": 82,
+    "cancelledTrips": 2,
+    "averageFuelEfficiency": "8.7 km/l",
+    "totalFuelCost": "₹12,456",
+    "maintenanceCost": "₹3,200",
+    "driverPerformance": {
+      "excellent": 2,
+      "good": 1,
+      "needsImprovement": 0
+    },
+    "studentFeedback": 4.6,
+    "parentComplaints": 1,
+    "resolved": 1,
+    "pending": 0,
+    "createdAt": "2024-01-21"
+  },
+  {
+    "Id": 3,
+    "reportType": "Monthly Fleet Status",
+    "month": "January 2024",
+    "totalOperatingDays": 22,
+    "vehicleUtilization": "87%",
+    "totalMaintenance": 4,
+    "scheduledMaintenance": 3,
+    "emergencyMaintenance": 1,
+    "licenseRenewals": 1,
+    "insuranceRenewals": 0,
+    "safetyInspections": 4,
+    "passedInspections": 4,
+    "failedInspections": 0,
+    "driverTraining": 2,
+    "newDriversHired": 0,
+    "driverTurnover": 0,
+    "createdAt": "2024-01-31"
+  }
+]

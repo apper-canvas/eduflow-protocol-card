@@ -7,15 +7,17 @@ const FilterDropdown = ({
   onChange, 
   options, 
   placeholder = "All", 
-  className 
+  className,
+  multiple = false 
 }) => {
   return (
     <div className={className}>
-      <Select
+<Select
         label={label}
         value={value}
         onChange={onChange}
         className="min-w-32"
+        multiple={multiple}
       >
         <option value="">{placeholder}</option>
         {options.map((option) => (

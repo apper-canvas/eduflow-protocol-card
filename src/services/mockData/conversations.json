@@ -1,0 +1,86 @@
+[
+  {
+    "Id": 1,
+    "participants": [
+      {
+        "id": 1,
+        "name": "John Smith",
+        "type": "teacher",
+        "avatar": null
+      },
+      {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "type": "parent",
+        "avatar": null
+      }
+    ],
+    "lastMessage": "Thank you for the update! I'm so pleased to hear...",
+    "lastMessageTime": "2024-01-15T14:45:00Z",
+    "unreadCount": 0,
+    "status": "active"
+  },
+  {
+    "Id": 2,
+    "participants": [
+      {
+        "id": 3,
+        "name": "Mary Davis",
+        "type": "teacher",
+        "avatar": null
+      },
+      {
+        "id": 4,
+        "name": "Class 7A Parents",
+        "type": "group",
+        "avatar": null
+      }
+    ],
+    "lastMessage": "Dear Parents, we have an upcoming educational...",
+    "lastMessageTime": "2024-01-14T09:15:00Z",
+    "unreadCount": 0,
+    "status": "active"
+  },
+  {
+    "Id": 3,
+    "participants": [
+      {
+        "id": 5,
+        "name": "Admin Office",
+        "type": "admin",
+        "avatar": null
+      },
+      {
+        "id": 6,
+        "name": "Michael Brown",
+        "type": "parent",
+        "avatar": null
+      }
+    ],
+    "lastMessage": "This is a friendly reminder that the quarterly...",
+    "lastMessageTime": "2024-01-13T11:20:00Z",
+    "unreadCount": 1,
+    "status": "active"
+  },
+  {
+    "Id": 4,
+    "participants": [
+      {
+        "id": 7,
+        "name": "Lisa Wilson",
+        "type": "teacher",
+        "avatar": null
+      },
+      {
+        "id": 8,
+        "name": "Robert Taylor",
+        "type": "parent",
+        "avatar": null
+      }
+    ],
+    "lastMessage": "I would like to schedule a parent-teacher...",
+    "lastMessageTime": "2024-01-12T16:00:00Z",
+    "unreadCount": 0,
+    "status": "active"
+  }
+]

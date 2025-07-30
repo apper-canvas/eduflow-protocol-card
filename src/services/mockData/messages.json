@@ -1,0 +1,93 @@
+[
+  {
+    "Id": 1,
+    "conversationId": 1,
+    "senderId": 1,
+    "senderName": "John Smith",
+    "senderType": "teacher",
+    "recipientId": 2,
+    "recipientName": "Sarah Johnson",
+    "recipientType": "parent",
+    "subject": "Student Progress Update",
+    "content": "I wanted to update you on Emma's progress in Mathematics. She has shown significant improvement in her problem-solving skills and is actively participating in class discussions.",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "status": "read",
+    "hasAttachment": false,
+    "attachments": [],
+    "isTemplate": false
+  },
+  {
+    "Id": 2,
+    "conversationId": 1,
+    "senderId": 2,
+    "senderName": "Sarah Johnson",
+    "senderType": "parent",
+    "recipientId": 1,
+    "recipientName": "John Smith",
+    "recipientType": "teacher",
+    "subject": "Re: Student Progress Update",
+    "content": "Thank you for the update! I'm so pleased to hear about Emma's improvement. Are there any additional resources you'd recommend for home practice?",
+    "timestamp": "2024-01-15T14:45:00Z",
+    "status": "read",
+    "hasAttachment": false,
+    "attachments": [],
+    "isTemplate": false
+  },
+  {
+    "Id": 3,
+    "conversationId": 2,
+    "senderId": 3,
+    "senderName": "Mary Davis",
+    "senderType": "teacher",
+    "recipientId": 4,
+    "recipientName": "Class 7A Parents",
+    "recipientType": "group",
+    "subject": "Field Trip Permission Forms",
+    "content": "Dear Parents, we have an upcoming educational field trip to the Science Museum scheduled for next Friday. Please find the permission form attached and return it by Wednesday.",
+    "timestamp": "2024-01-14T09:15:00Z",
+    "status": "delivered",
+    "hasAttachment": true,
+    "attachments": [
+      {
+        "name": "permission_form.pdf",
+        "type": "pdf",
+        "size": "245KB"
+      }
+    ],
+    "isTemplate": false
+  },
+  {
+    "Id": 4,
+    "conversationId": 3,
+    "senderId": 5,
+    "senderName": "Admin Office",
+    "senderType": "admin",
+    "recipientId": 6,
+    "recipientName": "Michael Brown",
+    "recipientType": "parent",
+    "subject": "Fee Payment Reminder",
+    "content": "This is a friendly reminder that the quarterly fee payment for your child Alex Brown (Grade 8B) is due by January 20th, 2024. Please make the payment through our online portal or visit the office.",
+    "timestamp": "2024-01-13T11:20:00Z",
+    "status": "sent",
+    "hasAttachment": false,
+    "attachments": [],
+    "isTemplate": true
+  },
+  {
+    "Id": 5,
+    "conversationId": 4,
+    "senderId": 7,
+    "senderName": "Lisa Wilson",
+    "senderType": "teacher",
+    "recipientId": 8,
+    "recipientName": "Robert Taylor",
+    "recipientType": "parent",
+    "subject": "Parent-Teacher Conference",
+    "content": "I would like to schedule a parent-teacher conference to discuss your child's academic performance and behavior in class. Please let me know your availability for next week.",
+    "timestamp": "2024-01-12T16:00:00Z",
+    "status": "delivered",
+    "hasAttachment": false,
+    "attachments": [],
+    "isTemplate": false
+  }
+]

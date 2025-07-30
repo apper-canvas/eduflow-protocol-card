@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "name": "Progress Update",
+    "category": "academic",
+    "subject": "Student Progress Update",
+    "content": "I wanted to update you on [STUDENT_NAME]'s progress in [SUBJECT]. [STUDENT_NAME] has shown [PROGRESS_DESCRIPTION] and is [PARTICIPATION_LEVEL] in class discussions.",
+    "variables": ["STUDENT_NAME", "SUBJECT", "PROGRESS_DESCRIPTION", "PARTICIPATION_LEVEL"],
+    "createdBy": "System",
+    "isActive": true
+  },
+  {
+    "Id": 2,
+    "name": "Assignment Reminder",
+    "category": "reminder",
+    "subject": "Assignment Submission Reminder",
+    "content": "This is a reminder that [ASSIGNMENT_NAME] for [SUBJECT] is due on [DUE_DATE]. Please ensure your child completes and submits the assignment on time.",
+    "variables": ["ASSIGNMENT_NAME", "SUBJECT", "DUE_DATE"],
+    "createdBy": "System",
+    "isActive": true
+  },
+  {
+    "Id": 3,
+    "name": "Fee Payment Reminder",
+    "category": "administrative",
+    "subject": "Fee Payment Reminder",
+    "content": "This is a friendly reminder that the [PAYMENT_TYPE] fee payment for [STUDENT_NAME] is due by [DUE_DATE]. Please make the payment through our online portal or visit the office.",
+    "variables": ["PAYMENT_TYPE", "STUDENT_NAME", "DUE_DATE"],
+    "createdBy": "System",
+    "isActive": true
+  },
+  {
+    "Id": 4,
+    "name": "Attendance Concern",
+    "category": "attendance",
+    "subject": "Attendance Concern",
+    "content": "We have noticed that [STUDENT_NAME] has been absent for [ABSENT_DAYS] days this month. Please contact us if there are any issues we should be aware of.",
+    "variables": ["STUDENT_NAME", "ABSENT_DAYS"],
+    "createdBy": "System",
+    "isActive": true
+  },
+  {
+    "Id": 5,
+    "name": "Event Invitation",
+    "category": "event",
+    "subject": "[EVENT_NAME] Invitation",
+    "content": "We are pleased to invite you and your family to [EVENT_NAME] scheduled for [EVENT_DATE] at [EVENT_TIME]. The event will be held at [VENUE]. Please confirm your attendance.",
+    "variables": ["EVENT_NAME", "EVENT_DATE", "EVENT_TIME", "VENUE"],
+    "createdBy": "System",
+    "isActive": true
+  }
+]

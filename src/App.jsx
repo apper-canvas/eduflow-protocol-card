@@ -8,7 +8,9 @@ import Students from '@/components/pages/Students';
 import Admissions from '@/components/pages/Admissions';
 import MarkAttendance from '@/components/pages/MarkAttendance';
 import Academics from '@/components/pages/Academics';
+import Communications from '@/components/pages/Communications';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
+
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -48,34 +50,7 @@ function App() {
                   element={<MarkAttendance />} 
                 />
                 
-                <Route 
-                  path="/communications" 
-                  element={
-                    <PlaceholderPage
-                      title="Communications Hub"
-                      description="Centralized communication platform for school-wide announcements, messaging, and notifications."
-                      icon="MessageSquare"
-                      gradient="from-pink-500 to-rose-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "Mail",
-                          title: "Messaging System",
-                          description: "Direct messaging between teachers, students, and parents"
-                        },
-                        {
-                          icon: "Megaphone",
-                          title: "Announcements",
-                          description: "School-wide announcements and important notifications"
-                        },
-                        {
-                          icon: "Phone",
-                          title: "SMS Integration",
-                          description: "Automated SMS notifications for important updates"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/communications" element={<Communications />} />
                 
                 <Route 
                   path="/timetable" 

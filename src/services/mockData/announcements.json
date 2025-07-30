@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "title": "School Holiday Notice",
+    "content": "Please note that school will be closed on January 26th for Republic Day. Classes will resume on January 27th as per regular schedule.",
+    "priority": "high",
+    "targetAudience": "all",
+    "createdBy": "Admin Office",
+    "createdAt": "2024-01-10T09:00:00Z",
+    "publishedAt": "2024-01-10T09:30:00Z",
+    "expiresAt": "2024-01-27T00:00:00Z",
+    "status": "published",
+    "readBy": 145,
+    "totalRecipients": 200,
+    "attachments": []
+  },
+  {
+    "Id": 2,
+    "title": "Annual Sports Day Registration",
+    "content": "Registration for Annual Sports Day is now open! Events include track and field, swimming, and team sports. Register your child by February 15th through the parent portal.",
+    "priority": "medium",
+    "targetAudience": "parents",
+    "createdBy": "Sports Department",
+    "createdAt": "2024-01-08T14:30:00Z",
+    "publishedAt": "2024-01-08T15:00:00Z",
+    "expiresAt": "2024-02-15T23:59:59Z",
+    "status": "published",
+    "readBy": 78,
+    "totalRecipients": 150,
+    "attachments": [
+      {
+        "name": "sports_day_events.pdf",
+        "type": "pdf",
+        "size": "1.2MB"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "title": "New Library Hours",
+    "content": "Starting January 20th, the school library will have extended hours on weekdays. New timing: Monday-Friday 7:30 AM to 6:00 PM, Saturday 9:00 AM to 2:00 PM.",
+    "priority": "low",
+    "targetAudience": "students",
+    "createdBy": "Librarian",
+    "createdAt": "2024-01-07T11:15:00Z",
+    "publishedAt": "2024-01-07T12:00:00Z",
+    "expiresAt": "2024-02-07T23:59:59Z",
+    "status": "published",
+    "readBy": 89,
+    "totalRecipients": 120,
+    "attachments": []
+  },
+  {
+    "Id": 4,
+    "title": "Parent-Teacher Meeting Schedule",
+    "content": "Individual parent-teacher meetings are scheduled for January 25-26. Please check your email for specific time slots and teacher assignments.",
+    "priority": "high",
+    "targetAudience": "parents",
+    "createdBy": "Academic Office",
+    "createdAt": "2024-01-05T10:00:00Z",
+    "publishedAt": "2024-01-05T10:30:00Z",
+    "expiresAt": "2024-01-27T00:00:00Z",
+    "status": "published",
+    "readBy": 112,
+    "totalRecipients": 150,
+    "attachments": []
+  }
+]

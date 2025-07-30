@@ -12,7 +12,7 @@ import { messageService, conversationService, templateService } from '@/services
 import announcementService from '@/services/api/announcementService';
 import notificationService from '@/services/api/notificationService';
 import communicationHistoryService from '@/services/api/communicationHistoryService';
-import parentService from '@/services/api/parentService';
+import { parentService } from '@/services/api/parentService';
 
 const Communications = () => {
   const [activeTab, setActiveTab] = useState('messages');

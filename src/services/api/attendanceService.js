@@ -155,10 +155,23 @@ export const getAttendanceStats = (className, section, startDate, endDate) => {
   const presentCount = records.filter(item => item.status === 'Present').length;
   const absentCount = records.filter(item => item.status === 'Absent').length;
   
-  return {
+return {
     total: totalRecords,
     present: presentCount,
     absent: absentCount,
     attendanceRate: totalRecords > 0 ? ((presentCount / totalRecords) * 100).toFixed(2) : 0
   };
+};
+
+// Export bundled service object for easier importing
+export const attendanceService = {
+  getAllAttendance,
+  getAttendanceById,
+  getAttendanceByClassAndDate,
+  getStudentAttendanceByDate,
+  createAttendance,
+  updateAttendance,
+  deleteAttendance,
+  saveClassAttendance,
+  getAttendanceStats
 };

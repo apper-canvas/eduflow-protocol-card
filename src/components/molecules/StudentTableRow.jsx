@@ -14,10 +14,14 @@ const StudentTableRow = ({ student, onClick }) => {
     >
       <td className="px-6 py-4 whitespace-nowrap">
         <div className="flex items-center">
-          <img 
+<img 
             className="h-10 w-10 rounded-full object-cover border-2 border-white shadow-md" 
-            src={student.photo} 
-            alt={`${student.firstName} ${student.lastName}`}
+            src={student?.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(student?.firstName || '')}+${encodeURIComponent(student?.lastName || '')}&background=2563eb&color=fff&size=150`} 
+            alt={`${student?.firstName || 'Student'} ${student?.lastName || ''}`}
+            onError={(e) => {
+              e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(student?.firstName || 'Student')}+${encodeURIComponent(student?.lastName || '')}&background=64748b&color=fff&size=150`;
+            }}
+            loading="lazy"
           />
           <div className="ml-4">
             <div className="text-sm font-medium text-gray-900">

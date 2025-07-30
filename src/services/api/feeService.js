@@ -251,9 +251,9 @@ getByCategoryType: (categoryType) => {
           { month: 'Mar', online: 65, cash: 25, cheque: 8, transfer: 2 }
         ]
       };
-    } catch (error) {
+} catch (error) {
       console.error('Error fetching payment trends:', error);
-return null;
+      return null;
     }
   }
 };

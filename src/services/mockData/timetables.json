@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 1,
+    "classId": 1,
+    "day": "Monday",
+    "period": 1,
+    "startTime": "09:00",
+    "endTime": "09:40",
+    "subjectId": 1,
+    "teacherId": 1,
+    "roomId": 101
+  },
+  {
+    "Id": 2,
+    "classId": 1,
+    "day": "Monday",
+    "period": 2,
+    "startTime": "09:40",
+    "endTime": "10:20",
+    "subjectId": 2,
+    "teacherId": 2,
+    "roomId": 101
+  },
+  {
+    "Id": 3,
+    "classId": 1,
+    "day": "Monday",
+    "period": 3,
+    "startTime": "10:40",
+    "endTime": "11:20",
+    "subjectId": 3,
+    "teacherId": 5,
+    "roomId": 101
+  },
+  {
+    "Id": 4,
+    "classId": 1,
+    "day": "Monday",
+    "period": 4,
+    "startTime": "11:20",
+    "endTime": "12:00",
+    "subjectId": 4,
+    "teacherId": 1,
+    "roomId": 101
+  },
+  {
+    "Id": 5,
+    "classId": 1,
+    "day": "Tuesday",
+    "period": 1,
+    "startTime": "09:00",
+    "endTime": "09:40",
+    "subjectId": 2,
+    "teacherId": 2,
+    "roomId": 101
+  },
+  {
+    "Id": 6,
+    "classId": 1,
+    "day": "Tuesday",
+    "period": 2,
+    "startTime": "09:40",
+    "endTime": "10:20",
+    "subjectId": 1,
+    "teacherId": 1,
+    "roomId": 101
+  },
+  {
+    "Id": 7,
+    "classId": 1,
+    "day": "Tuesday",
+    "period": 3,
+    "startTime": "10:40",
+    "endTime": "11:20",
+    "subjectId": 5,
+    "teacherId": 8,
+    "roomId": 1005
+  },
+  {
+    "Id": 8,
+    "classId": 1,
+    "day": "Tuesday",
+    "period": 4,
+    "startTime": "11:20",
+    "endTime": "12:00",
+    "subjectId": 6,
+    "teacherId": 9,
+    "roomId": 1003
+  },
+  {
+    "Id": 9,
+    "classId": 2,
+    "day": "Monday",
+    "period": 1,
+    "startTime": "09:00",
+    "endTime": "09:40",
+    "subjectId": 2,
+    "teacherId": 2,
+    "roomId": 102
+  },
+  {
+    "Id": 10,
+    "classId": 2,
+    "day": "Monday",
+    "period": 2,
+    "startTime": "09:40",
+    "endTime": "10:20",
+    "subjectId": 1,
+    "teacherId": 2,
+    "roomId": 102
+  },
+  {
+    "Id": 11,
+    "classId": 3,
+    "day": "Monday",
+    "period": 1,
+    "startTime": "09:00",
+    "endTime": "09:40",
+    "subjectId": 1,
+    "teacherId": 3,
+    "roomId": 201
+  },
+  {
+    "Id": 12,
+    "classId": 3,
+    "day": "Monday",
+    "period": 2,
+    "startTime": "09:40",
+    "endTime": "10:20",
+    "subjectId": 2,
+    "teacherId": 6,
+    "roomId": 201
+  }
+]

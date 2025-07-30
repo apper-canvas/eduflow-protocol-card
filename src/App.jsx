@@ -9,6 +9,7 @@ import Admissions from '@/components/pages/Admissions';
 import MarkAttendance from '@/components/pages/MarkAttendance';
 import Academics from '@/components/pages/Academics';
 import Communications from '@/components/pages/Communications';
+import Timetable from '@/components/pages/Timetable';
 import PlaceholderPage from '@/components/pages/PlaceholderPage';
 
 function App() {
@@ -52,34 +53,7 @@ function App() {
                 
 <Route path="/communications" element={<Communications />} />
                 
-                <Route 
-                  path="/timetable" 
-                  element={
-                    <PlaceholderPage
-                      title="Timetable Management"
-                      description="Smart timetable creation and management system with conflict detection and teacher allocation."
-                      icon="Clock"
-                      gradient="from-orange-500 to-amber-600"
-                      comingSoonFeatures={[
-                        {
-                          icon: "Calendar",
-                          title: "Class Scheduling",
-                          description: "Automated class scheduling with conflict detection"
-                        },
-                        {
-                          icon: "Users",
-                          title: "Teacher Allocation",
-                          description: "Efficient teacher assignment and workload management"
-                        },
-                        {
-                          icon: "Map",
-                          title: "Room Management",
-                          description: "Classroom allocation and resource management"
-                        }
-                      ]}
-                    />
-                  } 
-                />
+<Route path="/timetable" element={<Timetable />} />
                 
                 <Route 
                   path="/examinations" 

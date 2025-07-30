@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "employeeId": "EMP001",
+    "email": "sarah.johnson@school.edu",
+    "phone": "+1234567890",
+    "subjects": ["English", "Social Studies"],
+    "department": "Primary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "employeeId": "EMP002",
+    "email": "michael.chen@school.edu",
+    "phone": "+1234567891",
+    "subjects": ["Mathematics", "Science"],
+    "department": "Primary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 3,
+    "name": "Emily Davis",
+    "employeeId": "EMP003",
+    "email": "emily.davis@school.edu",
+    "phone": "+1234567892",
+    "subjects": ["English", "Art"],
+    "department": "Primary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 4,
+    "name": "Robert Wilson",
+    "employeeId": "EMP004",
+    "email": "robert.wilson@school.edu",
+    "phone": "+1234567893",
+    "subjects": ["Mathematics", "Physical Education"],
+    "department": "Primary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Anderson",
+    "employeeId": "EMP005",
+    "email": "lisa.anderson@school.edu",
+    "phone": "+1234567894",
+    "subjects": ["Science", "Environmental Studies"],
+    "department": "Primary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 6,
+    "name": "David Brown",
+    "employeeId": "EMP006",
+    "email": "david.brown@school.edu",
+    "phone": "+1234567895",
+    "subjects": ["Mathematics", "Computer Science"],
+    "department": "Elementary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 7,
+    "name": "Jennifer Taylor",
+    "employeeId": "EMP007",
+    "email": "jennifer.taylor@school.edu",
+    "phone": "+1234567896",
+    "subjects": ["English", "History"],
+    "department": "Elementary",
+    "isClassTeacher": true,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 8,
+    "name": "Mark Johnson",
+    "employeeId": "EMP008",
+    "email": "mark.johnson@school.edu",
+    "phone": "+1234567897",
+    "subjects": ["Physical Education"],
+    "department": "Sports",
+    "isClassTeacher": false,
+    "maxPeriodsPerDay": 8,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 9,
+    "name": "Anna Martinez",
+    "employeeId": "EMP009",
+    "email": "anna.martinez@school.edu",
+    "phone": "+1234567898",
+    "subjects": ["Music", "Art"],
+    "department": "Arts",
+    "isClassTeacher": false,
+    "maxPeriodsPerDay": 7,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  },
+  {
+    "Id": 10,
+    "name": "James Wilson",
+    "employeeId": "EMP010",
+    "email": "james.wilson@school.edu",
+    "phone": "+1234567899",
+    "subjects": ["Computer Science"],
+    "department": "Technology",
+    "isClassTeacher": false,
+    "maxPeriodsPerDay": 6,
+    "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  }
+]

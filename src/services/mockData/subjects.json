@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "name": "English",
+    "code": "ENG",
+    "department": "Languages",
+    "color": "#3b82f6",
+    "periodsPerWeek": 5,
+    "isCore": true
+  },
+  {
+    "Id": 2,
+    "name": "Mathematics",
+    "code": "MATH",
+    "department": "Sciences",
+    "color": "#ef4444",
+    "periodsPerWeek": 5,
+    "isCore": true
+  },
+  {
+    "Id": 3,
+    "name": "Science",
+    "code": "SCI",
+    "department": "Sciences",
+    "color": "#10b981",
+    "periodsPerWeek": 4,
+    "isCore": true
+  },
+  {
+    "Id": 4,
+    "name": "Social Studies",
+    "code": "SS",
+    "department": "Humanities",
+    "color": "#f59e0b",
+    "periodsPerWeek": 3,
+    "isCore": true
+  },
+  {
+    "Id": 5,
+    "name": "Physical Education",
+    "code": "PE",
+    "department": "Sports",
+    "color": "#8b5cf6",
+    "periodsPerWeek": 2,
+    "isCore": false
+  },
+  {
+    "Id": 6,
+    "name": "Art",
+    "code": "ART",
+    "department": "Arts",
+    "color": "#ec4899",
+    "periodsPerWeek": 2,
+    "isCore": false
+  },
+  {
+    "Id": 7,
+    "name": "Music",
+    "code": "MUS",
+    "department": "Arts",
+    "color": "#06b6d4",
+    "periodsPerWeek": 2,
+    "isCore": false
+  },
+  {
+    "Id": 8,
+    "name": "Computer Science",
+    "code": "CS",
+    "department": "Technology",
+    "color": "#84cc16",
+    "periodsPerWeek": 2,
+    "isCore": false
+  },
+  {
+    "Id": 9,
+    "name": "Environmental Studies",
+    "code": "EVS",
+    "department": "Sciences",
+    "color": "#22c55e",
+    "periodsPerWeek": 2,
+    "isCore": false
+  },
+  {
+    "Id": 10,
+    "name": "History",
+    "code": "HIST",
+    "department": "Humanities",
+    "color": "#a855f7",
+    "periodsPerWeek": 3,
+    "isCore": true
+  }
+]

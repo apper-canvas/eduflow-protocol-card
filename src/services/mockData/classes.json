@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "name": "Grade 1A",
+    "grade": "1",
+    "section": "A",
+    "classTeacherId": 1,
+    "strength": 25,
+    "roomId": 101,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 2,
+    "name": "Grade 1B",
+    "grade": "1",
+    "section": "B",
+    "classTeacherId": 2,
+    "strength": 24,
+    "roomId": 102,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 3,
+    "name": "Grade 2A",
+    "grade": "2",
+    "section": "A",
+    "classTeacherId": 3,
+    "strength": 28,
+    "roomId": 201,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 4,
+    "name": "Grade 2B",
+    "grade": "2",
+    "section": "B",
+    "classTeacherId": 4,
+    "strength": 26,
+    "roomId": 202,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 5,
+    "name": "Grade 3A",
+    "grade": "3",
+    "section": "A",
+    "classTeacherId": 5,
+    "strength": 30,
+    "roomId": 301,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 6,
+    "name": "Grade 4A",
+    "grade": "4",
+    "section": "A",
+    "classTeacherId": 6,
+    "strength": 29,
+    "roomId": 401,
+    "academicYear": "2024-25"
+  },
+  {
+    "Id": 7,
+    "name": "Grade 5A",
+    "grade": "5",
+    "section": "A",
+    "classTeacherId": 7,
+    "strength": 32,
+    "roomId": 501,
+    "academicYear": "2024-25"
+  }
+]

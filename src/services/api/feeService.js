@@ -173,18 +173,17 @@ export const feeService = {
   },
 
   // Get fee structures by category type
-  getByCategoryType: (categoryType) => {
+getByCategoryType: (categoryType) => {
     try {
       const data = getData();
       return data.filter(structure => 
         structure.categoryType === categoryType && structure.isActive
       ).map(item => ({ ...item }));
-).map(item => ({ ...item }));
     } catch (error) {
       console.error('Error fetching fee structures by category type:', error);
       return [];
     }
-
+  },
   // Financial Analytics Methods
   getRevenueAnalysis: (startDate, endDate) => {
     try {

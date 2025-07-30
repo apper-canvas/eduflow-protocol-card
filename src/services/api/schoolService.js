@@ -70,7 +70,7 @@ recentStudents: recentStudents.slice(0, 5),
         collectionEfficiency: 94.2,
         teacherSatisfaction: 87.6
       },
-      alerts: [
+alerts: [
         {
           type: 'warning',
           message: 'Fee collection rate below target in 3 classes',
@@ -84,3 +84,4 @@ recentStudents: recentStudents.slice(0, 5),
       ]
     };
   }
+};

@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "assignmentId": 1,
+    "studentId": 1,
+    "studentName": "Aarav Sharma",
+    "submissionDate": "2025-01-14",
+    "status": "Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": "Completed all 15 linear equation problems with detailed solutions."
+  },
+  {
+    "Id": 2,
+    "assignmentId": 1,
+    "studentId": 4,
+    "studentName": "Ananya Singh",
+    "submissionDate": "2025-01-16",
+    "status": "Late",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": "Solved 12 out of 15 problems. Missing graphical representations."
+  },
+  {
+    "Id": 3,
+    "assignmentId": 1,
+    "studentId": 7,
+    "studentName": "Rohan Mehta",
+    "submissionDate": "2025-01-13",
+    "status": "Graded",
+    "marks": 45,
+    "feedback": "Excellent work! All solutions are correct with clear working steps.",
+    "attachments": [],
+    "submittedContent": "Complete solutions with graphs and explanations."
+  },
+  {
+    "Id": 4,
+    "assignmentId": 2,
+    "studentId": 2,
+    "studentName": "Priya Patel",
+    "submissionDate": "2025-01-11",
+    "status": "Graded",
+    "marks": 28,
+    "feedback": "Good essay structure. Could improve on examples and depth of analysis.",
+    "attachments": [],
+    "submittedContent": "Well-structured essay on photosynthesis with diagrams."
+  },
+  {
+    "Id": 5,
+    "assignmentId": 2,
+    "studentId": 5,
+    "studentName": "Ishaan Gupta",
+    "submissionDate": "2025-01-12",
+    "status": "Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": "Detailed essay covering all aspects of photosynthesis."
+  },
+  {
+    "Id": 6,
+    "assignmentId": 3,
+    "studentId": 3,
+    "studentName": "Arjun Kumar",
+    "submissionDate": null,
+    "status": "Not Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": ""
+  },
+  {
+    "Id": 7,
+    "assignmentId": 3,
+    "studentId": 6,
+    "studentName": "Kavya Reddy",
+    "submissionDate": "2025-01-19",
+    "status": "Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": "Comprehensive timeline with detailed analysis of major events."
+  },
+  {
+    "Id": 8,
+    "assignmentId": 4,
+    "studentId": 9,
+    "studentName": "Vihaan Agarwal",
+    "submissionDate": "2025-01-17",
+    "status": "Graded",
+    "marks": 33,
+    "feedback": "Good experimental procedure and observations. Conclusions could be more detailed.",
+    "attachments": [],
+    "submittedContent": "Complete lab report with all required sections."
+  },
+  {
+    "Id": 9,
+    "assignmentId": 5,
+    "studentId": 1,
+    "studentName": "Aarav Sharma",
+    "submissionDate": null,
+    "status": "Not Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": ""
+  },
+  {
+    "Id": 10,
+    "assignmentId": 5,
+    "studentId": 15,
+    "studentName": "Ayaan Chopra",
+    "submissionDate": "2025-01-13",
+    "status": "Submitted",
+    "marks": null,
+    "feedback": "",
+    "attachments": [],
+    "submittedContent": "Detailed analysis of Sonnet 18 with identification of literary devices."
+  }
+]

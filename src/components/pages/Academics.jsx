@@ -3,6 +3,7 @@ import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import ApperIcon from '@/components/ApperIcon';
 import GradeBookTab from '@/components/organisms/GradeBookTab';
+import HomeworkTab from '@/components/organisms/HomeworkTab';
 
 const TabButton = ({ active, onClick, icon, children }) => (
   <Button
@@ -59,46 +60,8 @@ const Academics = () => {
       case 'gradebook':
         return <GradeBookTab />;
       
-      case 'homework':
-        return (
-          <PlaceholderTab
-            title="Homework Management"
-            description="Create, assign, and track homework assignments with submission tracking and automatic reminders."
-            icon="FileText"
-            features={[
-              {
-                icon: "Plus",
-                title: "Create Assignments",
-                description: "Design homework assignments with due dates, instructions, and resource attachments"
-              },
-              {
-                icon: "Users",
-                title: "Class Assignment",
-                description: "Assign homework to entire classes or individual student groups"
-              },
-              {
-                icon: "CheckCircle",
-                title: "Submission Tracking",
-                description: "Monitor homework submissions and track completion rates"
-              },
-              {
-                icon: "Bell",
-                title: "Auto Reminders",
-                description: "Automatic reminders sent to students and parents for due dates"
-              },
-              {
-                icon: "Star",
-                title: "Feedback System",
-                description: "Provide detailed feedback and ratings for completed assignments"
-              },
-              {
-                icon: "BarChart",
-                title: "Analytics",
-                description: "Track homework completion patterns and student performance"
-              }
-            ]}
-          />
-        );
+case 'homework':
+        return <HomeworkTab />;
       
       case 'reportcards':
         return (

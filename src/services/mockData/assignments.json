@@ -1,0 +1,67 @@
+[
+  {
+    "Id": 1,
+    "title": "Linear Equations Practice",
+    "subject": "Mathematics",
+    "class": "10th",
+    "description": "Solve the given set of linear equations and show all working steps. Include graphical representation where applicable.",
+    "dueDate": "2025-01-15",
+    "assignedDate": "2025-01-08",
+    "totalMarks": 50,
+    "instructions": "Complete all 15 problems. Show working for full marks.",
+    "attachments": [],
+    "status": "Active"
+  },
+  {
+    "Id": 2,
+    "title": "Photosynthesis Essay",
+    "subject": "Biology",
+    "class": "9th",
+    "description": "Write a detailed essay on photosynthesis process, its importance, and factors affecting it.",
+    "dueDate": "2025-01-12",
+    "assignedDate": "2025-01-05",
+    "totalMarks": 30,
+    "instructions": "Minimum 500 words. Include diagrams and examples.",
+    "attachments": [],
+    "status": "Active"
+  },
+  {
+    "Id": 3,
+    "title": "World War II Timeline",
+    "subject": "History",
+    "class": "11th",
+    "description": "Create a comprehensive timeline of major World War II events with analysis of their impact.",
+    "dueDate": "2025-01-20",
+    "assignedDate": "2025-01-10",
+    "totalMarks": 40,
+    "instructions": "Include dates, locations, and significance of each event.",
+    "attachments": [],
+    "status": "Active"
+  },
+  {
+    "Id": 4,
+    "title": "Chemical Reactions Lab Report",
+    "subject": "Chemistry",
+    "class": "12th",
+    "description": "Complete lab report on acid-base reactions with observations and conclusions.",
+    "dueDate": "2025-01-18",
+    "assignedDate": "2025-01-11",
+    "totalMarks": 35,
+    "instructions": "Follow standard lab report format. Include hypothesis and analysis.",
+    "attachments": [],
+    "status": "Active"
+  },
+  {
+    "Id": 5,
+    "title": "Shakespeare Sonnet Analysis",
+    "subject": "English",
+    "class": "10th",
+    "description": "Analyze Sonnet 18 by Shakespeare focusing on literary devices and themes.",
+    "dueDate": "2025-01-14",
+    "assignedDate": "2025-01-07",
+    "totalMarks": 25,
+    "instructions": "Identify and explain at least 5 literary devices used.",
+    "attachments": [],
+    "status": "Active"
+  }
+]
